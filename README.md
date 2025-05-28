@@ -18,6 +18,12 @@
 - CloudFrount 배포 도메인 이름: https://d354cw4mmho3tl.cloudfront.net/
 
 ### 주요 개념
+![githubactiondiagram.png](src/app/githubactiondiagram.png)
+
+위 배포 파이프라인은 GitHub Actions에서 실행되며, 코드가 푸시되면 GitHub 서버에서 프로젝트를 빌드한 뒤, AWS S3에 업로드합니다. 이후 AWS CloudFront의 캐시를 무효화해 최신 파일이
+사용자에게 제공되도록 합니다.
+전체 작업 흐름은 GitHub → AWS(S3, CloudFront) 순으로 이어지며, 모든 과정은 자동화되어 있습니다.
+
 
 - GitHub Actions과 CI/CD 도구
 
