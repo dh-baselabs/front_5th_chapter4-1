@@ -21,8 +21,8 @@
 
 - GitHub Actions과 CI/CD 도구
 
-제공된 워크플로우는 GitHub Actions를 이용해 코드 변경 시 자동으로 배포가 이루어지도록 구성되어 있었습니다. GitHub Actions는 GitHub에서 제공하는 CI/CD 도구로, 이벤트(예:
-push)에 따라 자동으로 스크립트를 실행해 배포나 테스트를 수행할 수 있습니다.
+GitHub Actions를 활용해 코드 변경 사항이 발생할 때마다 자동으로 프로젝트를 빌드하고 배포하는 워크플로우가 제공되었습니다. GitHub Actions는 GitHub에서 공식적으로 지원하는 CI/CD
+도구로, 코드 푸시(push)와 같은 이벤트를 감지해 미리 정의된 작업을 자동으로 실행해줍니다.
 
 추가 조사: `actions/checkout`, `aws-actions/configure-aws-credentials` 등의 공식 액션을 통해 AWS 배포 파이프라인을 구성할 수 있으며, 특히
 `workflow_dispatch` 이벤트를 통해 수동 트리거도 지원합니다.
